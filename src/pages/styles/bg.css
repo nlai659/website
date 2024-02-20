@@ -1,0 +1,24 @@
+.grainy::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--bg);
+  opacity: 0.14;
+}
+
+.grainy::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #0C101B;
+  opacity: 0.14;
+  filter: url(#noiseFilter); /* Apply the SVG filter */
+}
