@@ -1,10 +1,23 @@
 import React from "react";
+import BouncingLetters from "../components/BouncingLetters";
+import "./about-page.css";
 
 const HomePage: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to the HomePage!</h1>
-      <p>This is the main page of your application.</p>
+      <div className="grainy w-screen h-screen">
+        <svg className="h-0 w-0">
+          <filter id="noiseFilter">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.3"
+              numOctaves="1"
+              stitchTiles="stitch"
+            />
+          </filter>
+        </svg>
+          <BouncingLetters string="Nigel Lai" />
+      </div>
     </div>
   );
 };

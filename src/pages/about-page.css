@@ -1,0 +1,42 @@
+:root {
+  --bg: #080B12;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: rgb(8,11,18);
+  background: linear-gradient(180deg, rgb(3.137% 4.314% 7.059%) 0%, rgb(3.137% 4.314% 7.059% / 0.9999847412109375) 6.25%, rgb(3.137% 4.314% 7.059% / 0.999755859375) 12.5%, rgb(3.137% 4.314% 7.059% / 0.9987640380859375) 18.75%, rgb(3.137% 4.314% 7.059% / 0.99609375) 25%, rgb(3.137% 4.314% 7.059% / 0.9904632568359375) 31.25%, rgb(3.137% 4.314% 7.059% / 0.980224609375) 37.5%, rgb(3.137% 4.314% 7.059% / 0.9633636474609375) 43.75%, rgb(3.137% 4.314% 7.059% / 0.9375) 50%, rgb(3.137% 4.314% 7.059% / 0.8998870849609375) 56.25%, rgb(3.137% 4.314% 7.059% / 0.847412109375) 62.5%, rgb(3.137% 4.314% 7.059% / 0.7765960693359375) 68.75%, rgb(3.137% 4.314% 7.059% / 0.68359375) 75%, rgb(3.137% 4.314% 7.059% / 0.5641937255859375) 81.25%, rgb(3.137% 4.314% 7.059% / 0.413818359375) 87.5%, rgb(3.137% 4.314% 7.059% / 0.2275238037109375) 93.75%, rgb(3.137% 4.314% 7.059% / 0) 100% );
+  font-family: "Poppins", sans-serif;
+}
+
+body::before,
+body::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  opacity: 15%;
+}
+
+body::before {
+  background: #8c8c8c;
+  filter: url(#noiseFilter);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutPage: React.FC = () => {
     return (
-        <div>
+        <div className="min-w-screen min-h-screen flex flex-col items-center justify-center bg-white">
             <h1>About Me</h1>
             <p>Welcome to my page! Here's a little bit about me:</p>
             <ul>
